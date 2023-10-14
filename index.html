@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>we are with you</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <style>
+    @import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+    @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+body {
+  background-color: #FFFFDD;
+  font-family: 'Droid Arabic Kufi', serif;
+  text-align: right;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #FFFFDD;
+  color: #016A70;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+  z-index: 999;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s; /* Add smooth transition effect */
+}
+.home{
+  display: flex;
+  justify-content: center;
+}
+.navbar-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  
+}
+
+.navbar-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #016A70;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.navbar-links a:hover {
+  border-bottom: 2px solid #016A70;
+}
+.container{
+  padding: 0em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+
+}
+.container button{
+  background-color: #016A70;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+}
+.imagesection{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 30%;
+  justify-content: center;
+}
+.withyou{
+  padding-top: 0px;
+}
+.title{
+  font-size: 85px;
+  
+  font-weight: bold;
+  color:#016A70;
+  text-align: center;
+  
+}
+.subtitle{
+  color:#016A70;
+  text-align: center;
+
+}
+.container2 {
+  width: 800px;
+  margin: 0;
+  background-color: #fff;
+  padding: 10px 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #A2C579;
+  color:#016A70;
+  border: none;
+  padding: 10px 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100px;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background-color:#7e9365; 
+}
+.section4{
+  display: flex ;
+  justify-content: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  width: 100%;
+  height: 100%;
+
+}
+
+.whats button{
+  font-size: 15px;
+  background-color: #FFFFDD;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 5px;
+}
+.button{
+  cursor: pointer;
+  transition: transform 0.20s ease-in-out; 
+}
+button:hover{
+  transform: scale(1.1);
+}
+.home{
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  color: white;
+  text-align: center;
+  padding-top: 200px; 
+}
+.whats img{
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+  margin-right: 50px;
+}
+.whats h1{
+  text-align: right;
+  color:black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.whats p{
+  font-size: 10px;
+  text-align: right;
+  color:black;
+  margin-top: 30px;
+}
+
+.card1 {
+  background-color: #FDFFF4;
+  border-radius: 10px;
+  border-top: 30px solid #016A70;opacity: 0.8;
+  border-bottom: 30px solid #016A70;opacity: 0.8;;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Style the image within the card */
+.card1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the quote text */
+.quote {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 20px;
+}
+.section3{
+  display: flex ;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20em;
+  padding-bottom: 5em;
+}
+.card1 p{
+  color:#016A70;
+  font-weight: bold;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15em;
+  padding-bottom: 5em;
+
+}
+
+/* Cards */
+.card {
+  background-color: #016A70;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+.card-image {
+  opacity: 50%;
+  float: right;
+  width: 400px;
+}
+
+/* Card text and button */
+.card-text {
+  color: #fff;
+  padding-top: 50px;
+  text-align: right;
+  width: 200px;
+  padding-right: 10px;
+}
+
+/* Card button */
+.card-button {
+  margin-top: 10px;
+  text-align: center;
+}
+.card2-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card2 {
+  width: 1200px;
+  height: 500px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Card image */
+.card2-image {
+  float: left;
+  width: 500px;
+}
+
+/* Card text and buttons */
+.card2-text-and-buttons {
+  float: right;
+  width: 500px;
+  padding: 30px;
+  text-align: right;
+}
+
+/* Card title */
+.card2-title {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Card paragraph */
+.card2-paragraph {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Card buttons */
+.card2-button {
+  border-radius: 20px;
+  margin-top: 10px;
+  text-align: right;
+  width: fit-content;
+  margin: 20px;
+}
+
+/* Card buttons alignment */
+.card2-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+.rotationsection{
+  display: flex ;
+  justify-content: center;
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
+section{
+  padding-top: 70px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 100px;
+
+  
+}
+.slid{
+  margin: 0 auto;
+  padding-top: 30px;
+  height: 600px;
+}
+
+.wrapper{
+  margin:auto;
+  width: 250px;
+  position: relative;
+  perspective: 1000px;
+  padding-top: 90px;
+
+}
+
+.caresoul{
+  width: 100%;
+  position: absolute;
+  float: right;
+  animation: rotar 20s infinite linear;
+  transform-style: preserve-3d;
+
+}
+.caresoul :hover{
+  animation-play-state: paused;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+.caresoul img{
+  image-rendering: auto;
+  transition: all 300ms;
+  transition: 1.9s ease;
+  width: 100%;
+  height: 100%;
+}
+.caresoul img :hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+
+}
+.shadow{
+  position: absolute;
+  box-shadow: 2px 2px 40px 2px rgba(0, 0, 0, 0.616) ;
+  border-radius: 2px;
+  
+}
+.caresoul figure{
+  margin: 0px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #0000008e;
+  position: absolute;
+}
+.caresoul figure :hover{
+  transform: scale(1.2);
+}
+.figure :hover{
+  transform: scale(1.2);
+}
+.caresoul figure:nth-child(1){
+  transform: rotateY(0deg) translateZ(300px);
+
+}
+.caresoul figure:nth-child(2){
+  transform: rotateY(60deg) translateZ(300px);
+  
+}
+.caresoul figure:nth-child(3){
+  transform: rotateY(120deg) translateZ(300px);
+  
+}
+.caresoul figure:nth-child(4){
+  transform: rotateY(180deg) translateZ(300px);
+  
+}
+.caresoul figure:nth-child(5){
+  transform: rotateY(240deg) translateZ(300px);
+  
+}
+.caresoul figure:nth-child(6){
+  transform: rotateY(300deg) translateZ(300px);
+}
+@keyframes rotar{
+  from{transform:rotateY(0deg)}
+  to{transform:rotateY(360deg)}
+}
+.section2{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    width: 100%;
+    height: 100%;
+  
+}
+
+.flexwhats{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.whats{
+  border-radius: 10px;
+  background-color:#A2C579;
+  width: 550px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  margin: 50px 50px ;
+  padding: 20px 20px;
+  justify-content: space-between;
+  
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <img src="_4c995d04-5b8c-4301-8971-76cca8281eb0-removebg-preview.png" alt="لوجو الموقع">
+    </div>
+    <ul class="navbar-links">
+        <li><a href="#">مساعدة و دعم</a></li>
+        <li><a href="#">قصص ملهمة </a></li>
+       <li><a href="#">مقولات مشهورة</a></li> 
+        <li><a href="#">ما هو التنمر الاليكنرونى ؟</a></li>
+    </ul>
+</nav>
+<div class="home">
+<div class="container">
+  <h1 class="title">احنا معاك</h1>
+  <h3 class="subtitle">متخفش و قول كل حاجة و احنا هنساعدك</h3>
+  <button>احصل على مساعدة</button>
+</div>
+</div>
+</div>
+
+ <div class="section2">
+  <div class="flexwhats">
+     <div class="whats">
+      <img src="Untitled design1.png" >
+     <div class="textbox">
+     <h1>ما هو التنمر الاليكترونى ؟</h1>
+     <p>التنمر الإلكتروني هو تنمر باستخدام التقنيات الرقمية، ويمكن أن يحدث على وسائل التواصل الاجتماعي ومنصات المراسلةومنصات الألعاب والهواتف المحمولة، وهو سلوك متكرر يهدف إلى إخافة أو استفزاز المستهدفين به أو تشويه سمعتهم. </p>
+     <button>تعرف اكثر عن التنمر الاليكترونى</button>
+     </div>
+    </div>
+  
+    <div class="whats">
+      <img src="Untitled design1.png" >
+      <div class="textbox">
+        <h1>ما هو التنمر الاليكترونى ؟</h1>
+        <p>التنمر الإلكتروني هو تنمر باستخدام التقنيات الرقمية، ويمكن أن يحدث على وسائل التواصل الاجتماعي ومنصات المراسلةومنصات الألعاب والهواتف المحمولة، وهو سلوك متكرر يهدف إلى إخافة أو استفزاز المستهدفين به أو تشويه سمعتهم. </p>
+        <button>تعرف اكثر عن التنمر الاليكترونى</button>
+      </div>
+     </div>
+     </div>
+     <div class="flexwhats">
+      <div class="whats">
+        <img src="Untitled design1.png" >
+        <div class="textbox">
+          <h1>ما هو التنمر الاليكترونى ؟</h1>
+          <p>التنمر الإلكتروني هو تنمر باستخدام التقنيات الرقمية، ويمكن أن يحدث على وسائل التواصل الاجتماعي ومنصات المراسلةومنصات الألعاب والهواتف المحمولة، وهو سلوك متكرر يهدف إلى إخافة أو استفزاز المستهدفين به أو تشويه سمعتهم. </p>
+          <button>تعرف اكثر عن التنمر الاليكترونى</button>
+        </div>
+       </div>
+
+
+        <div class="whats">
+          <img src="Untitled design1.png" >
+          <div class="textbox">
+            <h1>ما هو التنمر الاليكترونى ؟</h1>
+            <p>التنمر الإلكتروني هو تنمر باستخدام التقنيات الرقمية، ويمكن أن يحدث على وسائل التواصل الاجتماعي ومنصات المراسلةومنصات الألعاب والهواتف المحمولة، وهو سلوك متكرر يهدف إلى إخافة أو استفزاز المستهدفين به أو تشويه سمعتهم. </p>
+            <button>تعرف اكثر عن التنمر الاليكترونى</button>
+          </div>
+         </div>
+      </div>
+
+</div>
+<div class="rotationsection">
+<section class="slid" id="image">
+  <h2 dir="rtl"class="title">مقولات مشهورة</h2>
+  
+  
+  <div class="wrapper">  
+       
+      <div class="caresoul">
+       
+       <figure class="shadow"><img src="first.png" ></figure>
+       <figure class="shadow"><img src="second.png" ></figure>
+       <figure class="shadow"><img src="third.png" ></figure>
+       <figure class="shadow"><img src="fourth.png" ></figure>
+       <figure class="shadow"><img src="fifth.png" ></figure>
+       <figure class="shadow"><img src="_4c995d04-5b8c-4301-8971-76cca8281eb0-removebg-preview.png" ></figure>
+      </div>
+      </div>
+</section>
+</div>
+
+<div class="card-container">
+  <div class="card">
+    <img class="card-image" src="5.jpg" alt="Image description">
+    <div class="card-text">
+      <h3>كيف تقدم مساعدة لاولادك</h3>
+      <button class="card-button">اضغط هنا</button>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="4.jpg" alt="Image description">
+    <div class="card-text">
+      <h3>كيف تقدم مساعدة لاولادك</h3>
+      <button class="card-button">اضغط هنا</button>
+    </div>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card2">
+     <img class="card2-image" src="6.png" alt="Image description">
+    <div class="card2-text-and-buttons">
+       <h3 class="card2-title">طرق الحماية من التنمر الاليكترونى </h3>
+       <p class="card2-paragraph">التنمر الإلكتروني هو تنمر باستخدام التقنيات الرقمية، ويمكن أن يحدث على وسائل التواصل الاجتماعي ومنصات المراسلة ومنصات الألعاب والهواتف المحمولة، وهو سلوك متكرر يهدف إلى إخافة أو استفزاز المستهدفين به أو تشويه سمعتهم.</p>
+     <div class="card2-buttons">
+       <button class="card2-button">طرق الحماية</button>
+       <button class="card2-button">برامج software المهمة</button>
+     </div>
+    </div>
+  </div>
+</div>
+<div class="section4">
+<div class="container2">
+  <h1>احصل على مساعدة</h1>
+  <form id="contact-form" method="post" action="script.php">
+      <label for="name">الاسم </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">الايميل </label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">الصف الدراسى </label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">المشكلة</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">ابعت</button>
+  </form>
+  </div>
+</div>
+<script>
+  // JavaScript to toggle the fixed navbar on scroll
+  window.onscroll = function() {
+      var navbar = document.getElementById('navbar');
+      if (window.pageYOffset > 0) {
+          navbar.style.top = '0';
+      } else {
+          navbar.style.top = '-60px'; // Adjust the height of the navbar as needed
+      }
+  }
+</script>
+</body>
+</html>
